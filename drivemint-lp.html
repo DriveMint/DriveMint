@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DriveMint | The Future of Self-Drive in Trichy</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <meta name="robots" content="noindex, follow" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="Assets/drivemint-logo.png" type="image/x-icon">
+
+    <meta
+      name="description"
+      content="Experience premium self-drive car rentals in Trichy with DriveMint. Choose from our fleet of well-maintained Swifts, XL6s, and more with doorstep delivery and zero hidden costs."
+    />
+    <meta
+      name="keywords"
+      content="Self drive car rental Trichy, rent a car Trichy, DriveMint, car hire Trichy, self drive Swift Trichy, XL6 rental Trichy"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://sm-rental-and-travels.netlify.app/drivemint-lp.html/"
+    />
+    <meta
+      property="og:title"
+      content="DriveMint | Premium Self-Drive Car Rentals in Trichy"
+    />
+    <meta
+      property="og:description"
+      content="Stop waiting for taxis. Rent your dream car from DriveMint and own the road in Trichy. Doorstep delivery available at Airport, BHEL, and NIT."
+    />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=1200&h=630"
+    />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://sm-rental-and-travels.netlify.app/drivemint-lp.html/"
+    />
+    <meta
+      property="twitter:title"
+      content="DriveMint | Premium Self-Drive Car Rentals in Trichy"
+    />
+    <meta
+      property="twitter:description"
+      content="Instant car reservations in Trichy. Premium fleet, paperless process, and 24/7 support. Book your self-drive experience today."
+    />
+    <meta
+      property="twitter:image"
+      content="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=1200&h=600"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Playfair+Display:wght@700;900&display=swap");
+
+      :root {
+        --primary: #00f0ff;
+        --secondary: #8b5cf6;
+        --darker: #050508;
+        --card-bg: rgba(255, 255, 255, 0.03);
+        --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background: var(--darker);
+        color: #ffffff;
+        overflow-x: hidden;
+      }
+
+      .gradient-text {
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      /* Hero & Parallax Form Section */
+      .parallax-form-section {
+        position: relative;
+        padding: 100px 0;
+        background: linear-gradient(rgba(5, 5, 8, 0.85), rgba(5, 5, 8, 0.85)),
+          url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=1920");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .form-container {
+        background: rgba(10, 10, 15, 0.95);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(0, 240, 255, 0.3);
+        border-radius: 30px;
+        padding: 40px;
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+        max-width: 500px;
+        margin: 50px auto;
+      }
+
+      .form-label {
+        font-weight: 600;
+        color: var(--primary);
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+        display: block;
+      }
+
+      /* Fixed Placeholder Visibility */
+      .form-control,
+      .form-select {
+        background: var(--input-bg) !important;
+        border: 1px solid rgba(255, 255, 255, 0.15) !important;
+        color: #ffffff !important;
+        padding: 12px 15px;
+        border-radius: 12px;
+        transition: var(--transition);
+      }
+
+      .form-control::placeholder {
+        color: rgba(255, 255, 255, 0.5) !important;
+        opacity: 1;
+      }
+
+      .form-control:focus,
+      .form-select:focus {
+        background: rgba(255, 255, 255, 0.12) !important;
+        border-color: var(--primary) !important;
+        box-shadow: 0 0 15px rgba(0, 240, 255, 0.3) !important;
+        outline: none;
+      }
+
+      .form-select {
+        /* Fixes the repeated icon issue seen in image_1ea8ee.png */
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%2300F0FF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
+        background-repeat: no-repeat !important;
+        background-position: right 1rem center !important;
+        background-size: 16px 12px !important;
+        appearance: none;
+      }
+
+      /* Dropdown Options Styling (Dark Theme) */
+      .form-select option {
+        background: #1a1a1a;
+        color: white;
+      }
+
+      .submit-btn {
+        width: 100%;
+        padding: 16px;
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        border: none;
+        border-radius: 15px;
+        color: white;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: var(--transition);
+        margin-top: 10px;
+      }
+
+      .submit-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(0, 240, 255, 0.4);
+      }
+
+      .custom-location-wrapper {
+        display: none; /* Hidden by default */
+        animation: fadeIn 0.4s ease;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Fleet Section */
+      .fleet-section {
+        padding: 100px 0;
+        background: #0a0a0f;
+      }
+      .section-title {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        text-align: center;
+        font-weight: 900;
+      }
+
+      .fleet-card {
+        background: var(--card-bg);
+        border-radius: 25px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        transition: var(--transition);
+        height: 100%;
+      }
+      .fleet-card:hover {
+        transform: translateY(-15px);
+        border-color: var(--primary);
+      }
+      .fleet-img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+      .fleet-info {
+        padding: 25px;
+      }
+      .fleet-name {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      .fleet-badge {
+        background: rgba(0, 240, 255, 0.1);
+        color: var(--primary);
+        padding: 5px 15px;
+        border-radius: 50px;
+        font-size: 0.8rem;
+      }
+
+      /* Stats & Cards */
+      .stat-card {
+        text-align: center;
+        padding: 30px;
+        background: var(--card-bg);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.03);
+      }
+      .stat-number {
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: var(--primary);
+      }
+
+      /* FAQ Section */
+      .faq-section {
+        padding: 100px 0;
+        background: #0a0a0f;
+      }
+      .accordion-item {
+        background: var(--card-bg);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 15px !important;
+        margin-bottom: 15px;
+        overflow: hidden;
+      }
+      .accordion-button {
+        background: transparent;
+        color: white;
+        font-weight: 600;
+        padding: 20px;
+      }
+      .accordion-button:not(.collapsed) {
+        background: rgba(0, 240, 255, 0.1);
+        color: var(--primary);
+        box-shadow: none;
+      }
+      .accordion-button::after {
+        filter: invert(1);
+      }
+      .accordion-body {
+        color: rgba(255, 255, 255, 0.7);
+        line-height: 1.6;
+        background: rgba(0, 0, 0, 0.2);
+      }
+
+      /* Floating WhatsApp */
+      .whatsapp-float {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        background: #25d366;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: var(--transition);
+        text-decoration: none;
+      }
+      .whatsapp-float:hover {
+        transform: scale(1.1) rotate(10deg);
+        color: white;
+      }
+
+      .custom-location-wrapper {
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        .parallax-form-section {
+          padding: 60px 0;
+          background-attachment: scroll;
+        }
+        .whatsapp-float {
+          bottom: 20px;
+          right: 20px;
+          width: 50px;
+          height: 50px;
+          font-size: 25px;
+        }
+        @media (max-width: 576px) {
+          .form-container {
+            padding: 25px;
+            margin: 20px;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a
+      href="https://wa.me/919790140318?text=Hi%20DriveMint,%20I'm%20interested%20in%20renting%20a%20car."
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <section class="parallax-form-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <h1 class="display-3 fw-bold mb-4">
+              Why Own a Car <br /><span class="gradient-text"
+                >When You Can Own the Road?</span
+              >
+            </h1>
+            <p class="lead opacity-75 mb-4">
+              DriveMint isn't just a rental; it's your private garage in Trichy.
+              No maintenance, no insurance headaches—just pure driving pleasure
+              available 24/7.
+            </p>
+            <div class="d-flex gap-3 flex-wrap">
+              <div class="stat-item">
+                <i class="fas fa-check-circle text-primary me-2"></i>Doorstep
+                Delivery
+              </div>
+              <div class="stat-item">
+                <i class="fas fa-check-circle text-primary me-2"></i>Unlimited
+                Freedom
+              </div>
+              <div class="stat-item">
+                <i class="fas fa-check-circle text-primary me-2"></i>Zero Hidden
+                Costs
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 offset-lg-1">
+            <div class="form-container">
+              <h3 class="text-center mb-4">
+                Instant <span class="gradient-text">Reservation</span>
+              </h3>
+
+              <form id="leadForm">
+                <div class="mb-3">
+                  <label class="form-label">Full Name</label>
+                  <input
+                    type="text"
+                    id="userName"
+                    class="form-control"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Mobile Number</label>
+                  <input
+                    type="tel"
+                    id="mobile"
+                    class="form-control"
+                    placeholder="Enter 10-digit number"
+                    required
+                    pattern="[0-9]{10}"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Pick-up Location</label>
+                  <select class="form-select" id="pickupLocation" required>
+                    <option value="" disabled selected>
+                      Where should we drop the car?
+                    </option>
+                    <option value="Trichy Airport (TRZ)">
+                      Trichy Airport (TRZ)
+                    </option>
+                    <option value="BHEL Township">BHEL Township</option>
+                    <option value="NIT Trichy">NIT Trichy</option>
+                    <option value="Railway Junction">Railway Junction</option>
+                    <option value="Srirangam Temple">Srirangam Temple</option>
+                    <option value="Chatram Bus Stand">Chatram Bus Stand</option>
+                    <option value="Other">Custom Location</option>
+                  </select>
+                </div>
+
+                <div
+                  class="mb-3 custom-location-wrapper"
+                  id="customLocationWrapper"
+                >
+                  <label class="form-label">Enter Exact Address</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="customAddress"
+                    placeholder="Street, Landmark, Area"
+                  />
+                </div>
+
+                <div class="row g-3 mb-4">
+                  <div class="col-6">
+                    <label class="form-label">Start Date</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      required
+                      id="startDate"
+                    />
+                  </div>
+                  <div class="col-6">
+                    <label class="form-label">End Date</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      required
+                      id="endDate"
+                    />
+                  </div>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                  Check Availability <i class="fas fa-calendar-check ms-2"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="fleet-section">
+      <div class="container">
+        <h2 class="section-title mb-5">
+          NOT JUST CARS, <span class="gradient-text">EXPERIENCES</span>
+        </h2>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="fleet-card">
+              <img
+                src="Assets/car_swift.jpg"
+                class="fleet-img"
+                alt="Swift"
+              />
+              <div class="fleet-info">
+                <h3 class="fleet-name">The Urban Legend (Swift)</h3>
+                <p class="opacity-75">
+                  Perfect for zipping through traffic or a sprint to Srirangam.
+                </p>
+                <span class="fleet-badge">5 Seater</span>
+                <span class="fleet-badge">VXI Range</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="fleet-card">
+              <img
+                src="Assets/car_xl6.jpg"
+                class="fleet-img"
+                alt="XL6"
+              />
+              <div class="fleet-info">
+                <h3 class="fleet-name">The First Class (XL6)</h3>
+                <p class="opacity-75">
+                  Captain seats for your VIPs. Luxury drives to Kodaikanal.
+                </p>
+                <span class="fleet-badge">6 Seater</span>
+                <span class="fleet-badge">Premium SUV</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="fleet-card p-4 d-flex align-items-center">
+              <div class="text-center w-100">
+                <i class="fas fa-plus-circle display-4 text-primary mb-3"></i>
+                <h3 class="fleet-name">Unlimited Choices</h3>
+                <p class="small opacity-70">
+                  Sedans, 7-Seaters, and Luxury SUVs available through our
+                  partner network.
+                </p>
+                <a
+                  href="https://sm-rental-and-travels.netlify.app/#bookingCard"
+                  class="btn btn-outline-primary rounded-pill px-4"
+                  >Inquire More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="section-title mb-5">
+              FREQUENTLY <span class="gradient-text">ASKED</span>
+            </h2>
+            <div class="accordion" id="driveFaq">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#f1"
+                  >
+                    What documents do I need to rent a car?
+                  </button>
+                </h2>
+                <div
+                  id="f1"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#driveFaq"
+                >
+                  <div class="accordion-body">
+                    All you need is a valid Original Driving License and an
+                    Aadhar Card. We keep the process paperless and fast so you
+                    can get on the road in minutes.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#f2"
+                  >
+                    Is there a security deposit?
+                  </button>
+                </h2>
+                <div
+                  id="f2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#driveFaq"
+                >
+                  <div class="accordion-body">
+                    Yes, a small fully-refundable security deposit is required.
+                    It is returned instantly once you hand over the keys and the
+                    car is inspected.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#f3"
+                  >
+                    Do you provide doorstep delivery?
+                  </button>
+                </h2>
+                <div
+                  id="f3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#driveFaq"
+                >
+                  <div class="accordion-body">
+                    Absolutely! Whether you are at the Trichy Airport, Railway
+                    Junction, or a hotel in Thillai Nagar, we bring the car to
+                    you.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#f4"
+                  >
+                    What is the fuel policy?
+                  </button>
+                </h2>
+                <div
+                  id="f4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#driveFaq"
+                >
+                  <div class="accordion-body">
+                    We follow a "Level-to-Level" policy. We give you the car
+                    with a certain fuel level, and you simply return it with the
+                    same level. Transparent and fair.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-5 text-center border-top border-secondary">
+      <div class="container">
+        <h4 class="fw-bold gradient-text mb-3">DriveMint Trichy</h4>
+        <p class="opacity-50">9790140318 | BHEL Township, Trichy</p>
+        <div class="social-links mb-4">
+          <a href="#" class="text-white mx-2"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="text-white mx-2"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </div>
+        <p class="small opacity-30">
+          &copy; 2026 DriveMint. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Toggle Custom Location
+      const pickupSelect = document.getElementById("pickupLocation");
+      const customLocationWrapper = document.getElementById(
+        "customLocationWrapper"
+      );
+      const customAddressInput = document.getElementById("customAddress");
+
+      pickupSelect.addEventListener("change", function () {
+        if (this.value === "Other") {
+          customLocationWrapper.style.display = "block";
+          customAddressInput.setAttribute("required", "true");
+        } else {
+          customLocationWrapper.style.display = "none";
+          customAddressInput.removeAttribute("required");
+        }
+      });
+
+      // WhatsApp Lead Submission
+      document
+        .getElementById("leadForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Get values
+          const name = document.getElementById("userName").value;
+          const mobile = document.getElementById("mobile").value;
+          const location = document.getElementById("pickupLocation").value;
+          const customAddr = document.getElementById("customAddress").value;
+          const start = document.getElementById("startDate").value;
+          const end = document.getElementById("endDate").value;
+
+          // Determine final location text
+          const finalLocation =
+            location === "Other" ? `Custom: ${customAddr}` : location;
+
+          // Format WhatsApp Message
+          const message =
+            `DriveMint Booking Request: %0A%0A` +
+            `Name: ${name}%0A` +
+            `Mobile: ${mobile}%0A` +
+            `Location: ${finalLocation}%0A` +
+            `Start Date: ${start}%0A` +
+            `End Date: ${end}`;
+          // Replace with your WhatsApp number
+          const whatsappNumber = "919790140318";
+
+          // Redirect to WhatsApp
+          window.open(
+            `https://wa.me/${whatsappNumber}?text=${message}`,
+            "_blank"
+          );
+        });
+    </script>
+  </body>
+</html>
